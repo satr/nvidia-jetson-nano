@@ -2,7 +2,7 @@
 
 ## Setup ROS2
 ### Install CMake version 3.19 or above
-Version of CMake, existing by default, can not supportcommand `target_link_directories`, introduced in version 3.13
+Version of CMake, existing by default, can not support command [target_link_directories](https://cmake.org/cmake/help/git-stage/command/target_link_directories.html), introduced in version 3.13
 Check the version: `cmake --version`
 
 Build latest version
