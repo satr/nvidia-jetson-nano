@@ -1,5 +1,8 @@
 # IDE for development
 
+* [PyCharm](#jetbrains-pycharm)
+* [VSCode](#vscode)
+
 ## JetBrains PyCharm
 ### Install JDK
 ```
