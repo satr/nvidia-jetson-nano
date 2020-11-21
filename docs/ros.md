@@ -16,4 +16,5 @@ $ cmake --version
 
 ### Install ROS2 Foxy
 
-[Build ROS2 Foxy](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Development-Setup)
+* [Build ROS2 Foxy](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Development-Setup)
+* [Guideline on JetsonHacks](https://www.jetsonhacks.com/2019/10/23/install-ros-on-jetson-nano/)
