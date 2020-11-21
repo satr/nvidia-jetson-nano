@@ -27,7 +27,7 @@ sudo rm -rf /opt/jetbrains/pycharm-<VERSION>
 $ cd /opt/jetbrains/pycharm-<VERSION>/bin
 $ ./pycharm.sh
 ```
-* Right mouse click on the PyCharm in launcher panel and hit "Lock to Launcher" or "Iconify", or create a desktop shortcut
+* Right mouse click on the PyCharm in launcher panel and hit "Lock to Launcher" or create a desktop shortcut
   - Open new file for editing
   ```
   vi ~/Desktop/pycharm.desktop
