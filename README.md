@@ -4,6 +4,8 @@
 * [SSD drive](docs/ssd.md)
 * [ROS](docs/ros.md)
 * [IDE](docs/ide.md)
+* [Performance](docs/performance.md)
+* [Troubleshooting](docs/troubleshooting.md)
 
 ## Resources
 * [jetsonhacks.com](https://www.jetsonhacks.com/)
