@@ -28,3 +28,30 @@ $ cd /opt/jetbrains/pycharm-<VERSION>/bin
 $ ./pycharm.sh
 ```
 * Right mouse click on the PyCharm in launcher panel and hot "Lock to Launcher"
+* Create desktop shortcut
+  - Open new file for editing
+  ```
+  vi ~/Desktop/pycharm.desktop
+  ```
+  Copy/paste following content to it (change PyCharm version to one, installed above)
+  ```
+  [Desktop Entry]
+  Name=PyCharm
+  GenericName=Text Editor
+  Exec=/opt/jetbrains/pycharm-<VERSION>/bin/pycharm.sh
+  Icon=/opt/jetbrains/pycharm-<VERSION>/bin/pycharm.png
+  Type=Application
+  StartupNotify=false
+  Categories=Utility;TextEditor;Development;IDE;
+  MimeType=text/plain;inode/directory;
+  Actions=new-empty-window;
+  Keywords=pycharm;
+
+  X-Desktop-File-Install-Version=0.23
+
+  [Desktop Action new-empty-window]
+  Name=New PyCharm
+  Exec=/opt/jetbrains/pycharm-<VERSION>/pycharm.sh --no-sandbox --new-window %F
+  Icon=/opt/jetbrains/pycharm-<VERSION>/bin/pycharm.png
+  ```
+  - Hit `Esc`, then `:x` to save and exit
