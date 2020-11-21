@@ -1,24 +1,32 @@
 # IDE for development
+
 ## JetBrains PyCharm
-[Now to](https://youtrack.jetbrains.com/issue/JBR-549)
-
-[Files](https://bintray.com/jetbrains/intellij-jbr/jbrsdk11-linux-aarch64#files)
-
-### Install OpenJDK
+### Install JDK
 ```
-sudo dpkg —add-architecture armhf
-sudo apt update
-sudo apt install opened-11-jre:armhf
+$ sudo apt update
+$ sudo apt install default-jdk
 ```
 Check installed version
 ```
-PATH=/usr/lib/jvm/java-11-openjdk-armhf/bin:$PATH java -version
+$ java -version
 ```
-openjdk version "11.0.4" 2019-07-16
-OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)
-OpenJDK Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode)
-Now, modify startup script (in my case I use pycharm) pycharm.sh script to include 
-`PATH=/usr/lib/jvm/java-11-openjdk-armhf/bin:$PATH` or just run the following command in your terminal
+### Install PyCharm
+* Download [PyCharm for Linux](https://www.jetbrains.com/pycharm/download/#section=linux)
+* Copy the `pycharm-<VERSION>.tar.gz` to the desired installation location
 ```
-$ PATH=/usr/lib/jvm/java-11-openjdk-armhf/bin:$PATH ./pycharm.sh
+$ sudo mkdir -p /opt/jetbrains; cd /opt/jetbrains
 ```
+* Unpack the pycharm-<VERSION>.tar.gz file to an empty directory using the following command
+```
+$ sudo tar -xzf pycharm-<VERSION>.tar.gz -C /opt/jetbrains
+```
+Note: A new instance MUST NOT be extracted over an existing one. The target folder must be empty
+```
+sudo rm -rf /opt/jetbrains/pycharm-<VERSION>
+```
+* Run `pycharm.sh` from the bin subdirectory
+```
+$ cd /opt/jetbrains/pycharm-<VERSION>/bin
+$ ./pycharm.sh
+```
+* Right mouse click on the PyCharm in launcher panel and hot "Lock to Launcher"
