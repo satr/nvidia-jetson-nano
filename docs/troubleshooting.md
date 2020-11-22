@@ -16,3 +16,11 @@ To change autologin setting with terminal command
   AutomaticLoginEnable=false
   ```
   - hit Esc, then `:x` to save and exit
+
+### Docker fails on `run` command
+If there is an error _docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock_ on `docker run` command
+* Execute commands
+```
+sudo groupadd docker; sudo usermod -aG docker ${USER}
+```
+* Logout and login again
